@@ -266,10 +266,9 @@ nav a:hover, nav a[aria-current="page"] { color: var(--bronze); }
 @media (max-width: 760px) {
   .header-inner {
     min-height: auto;
-    align-items: center;
-    padding: 12px 0 18px;
+    align-items: flex-start;
+    padding: 16px 0 18px;
     flex-direction: column;
-    gap: 10px;
   }
 
   .brand {
@@ -279,41 +278,21 @@ nav a:hover, nav a[aria-current="page"] { color: var(--bronze); }
   }
 
   .brand img {
-    width: 340px;
-    max-width: calc(100vw - 36px);
-    height: auto;
-    mix-blend-mode: multiply;
+    width: 235px;
   }
 
   nav {
     width: 100%;
     justify-content: center;
-    gap: 10px 18px;
-  }
-
-  nav a {
-    font-size: .78rem;
-    letter-spacing: .10em;
+    gap: 11px 16px;
   }
 
   .grid-2, .grid-3, .services, .brand-strip-inner {
     grid-template-columns: 1fr;
   }
 
-  .brand-strip img {
-    width: 220px;
-  }
-
-  .footer-inner {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .section {
-    padding: 66px 0;
-  }
-
-  .hero {
-    min-height: 72vh;
-  }
+  .brand-strip img { width: 220px; }
+  .footer-inner { align-items: flex-start; flex-direction: column; }
+  .section { padding: 66px 0; }
+  .hero { min-height: 72vh; }
 }
