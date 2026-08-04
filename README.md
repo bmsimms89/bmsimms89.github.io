@@ -1,24 +1,10 @@
-# Simmons Glass, Inc. website
+# Simmons Glass, Inc. website — branded update
 
-This is a mobile-first static website for Simmons Glass, Inc.
+This package updates the live GitHub Pages site with the approved cream, navy,
+slate, and bronze palette; the island logo; a redesigned header and footer; and
+refined typography and homepage messaging.
 
-## Pages
-- Home
-- Glass
-- Construction
-- About
-- Contact
+Upload all files and folders into the `bmsimms89.github.io` repository,
+replacing files with the same names.
 
-## Before public launch
-1. Verify the 1967 founding year.
-2. Add the business phone number and email.
-3. Replace every placeholder image in the `images` folder.
-4. Review all service descriptions.
-5. Connect a custom domain if desired.
-
-## Publishing with GitHub Pages
-Upload all files and the `images` folder to the repository named:
-
-`bmsimms89.github.io`
-
-Then open the repository settings, choose Pages, and publish from the `main` branch and `/root` folder.
+The founding year is still provisional and should be verified before final launch.
