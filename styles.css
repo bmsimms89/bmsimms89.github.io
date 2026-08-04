@@ -271,8 +271,21 @@ nav a:hover, nav a[aria-current="page"] { color: var(--bronze); }
     flex-direction: column;
   }
 
-  .brand img { width: 205px; }
-  nav { justify-content: flex-start; gap: 11px 16px; }
+  .brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .brand img {
+    width: 235px;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+    gap: 11px 16px;
+  }
 
   .grid-2, .grid-3, .services, .brand-strip-inner {
     grid-template-columns: 1fr;
