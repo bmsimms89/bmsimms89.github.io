@@ -266,7 +266,7 @@ nav a:hover, nav a[aria-current="page"] { color: var(--bronze); }
 @media (max-width: 760px) {
   .header-inner {
     min-height: auto;
-    align-items: center;
+    align-items: flex-start;
     padding: 16px 0 18px;
     flex-direction: column;
   }
