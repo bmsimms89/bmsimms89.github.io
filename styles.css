@@ -264,24 +264,31 @@ nav a:hover, nav a[aria-current="page"] { color: var(--bronze); }
 }
 
 @media (max-width: 760px) {
+  .container.header-inner {
+    width: 100%;
+    max-width: none;
+    padding: 14px 18px 18px;
+  }
+
   .header-inner {
     min-height: auto;
     align-items: center;
-    padding: 12px 0 18px;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
   }
 
-  .brand {
+  .site-header .brand {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex: 0 0 auto;
   }
 
-  .brand img {
-    width: 340px;
-    max-width: calc(100vw - 36px);
-    height: auto;
+  .site-header .brand img {
+    width: 100% !important;
+    max-width: 390px !important;
+    height: auto !important;
+    object-fit: contain;
     mix-blend-mode: normal;
   }
 
