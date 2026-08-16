@@ -71,8 +71,8 @@ nav a:hover, nav a[aria-current="page"] { color: var(--bronze); }
   display: grid;
   align-items: end;
   background:
-    linear-gradient(180deg, rgba(15, 28, 40, .30), rgba(15, 28, 40, .86)),
-    url("images/hero-placeholder.jpg") 47% center/cover;
+    linear-gradient(180deg, rgba(15, 28, 40, .12), rgba(15, 28, 40, .82)),
+    url("images/hero-shower-dark.jpg") center/cover;
   color: var(--white);
 }
 
@@ -303,11 +303,6 @@ nav a:hover, nav a[aria-current="page"] { color: var(--bronze); }
     letter-spacing: .10em;
   }
 
-  .hero {
-    min-height: 72vh;
-    background-position: 47% center;
-  }
-
   .grid-2, .grid-3, .services, .brand-strip-inner {
     grid-template-columns: 1fr;
   }
@@ -323,5 +318,9 @@ nav a:hover, nav a[aria-current="page"] { color: var(--bronze); }
 
   .section {
     padding: 66px 0;
+  }
+
+  .hero {
+    min-height: 72vh;
   }
 }
