@@ -2,7 +2,7 @@
   --navy: #0f1c28;
   --slate: #435466;
   --bronze: #a47c4f;
-  --cream: #f2f0ec;
+  --cream: #f4ede5;
   --stone: #8c887f;
   --white: #ffffff;
   --line: rgba(15, 28, 40, .15);
@@ -32,9 +32,9 @@ a { color: inherit; }
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(242, 240, 236, .95);
+  background: #f4ede5;
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(15, 28, 40, .10);
 }
 
 .header-inner {
@@ -46,7 +46,7 @@ a { color: inherit; }
 }
 
 .brand { display: flex; align-items: center; text-decoration: none; }
-.brand img { width: 235px; height: auto; mix-blend-mode: multiply; }
+.brand img { width: 235px; height: auto; mix-blend-mode: normal; }
 
 nav {
   display: flex;
@@ -72,7 +72,7 @@ nav a:hover, nav a[aria-current="page"] { color: var(--bronze); }
   align-items: end;
   background:
     linear-gradient(180deg, rgba(15, 28, 40, .30) 0%, rgba(15, 28, 40, .48) 48%, rgba(15, 28, 40, .84) 100%),
-    url("images/hero-placeholder.jpg") center/cover;
+    url("images/hero-shower-dark.jpg") center/cover;
   color: var(--white);
 }
 
@@ -264,35 +264,63 @@ nav a:hover, nav a[aria-current="page"] { color: var(--bronze); }
 }
 
 @media (max-width: 760px) {
-  .header-inner {
-    min-height: auto;
-    align-items: flex-start;
-    padding: 16px 0 18px;
-    flex-direction: column;
+  .container.header-inner {
+    width: 100%;
+    max-width: none;
+    padding: 14px 18px 18px;
   }
 
-  .brand {
+  .header-inner {
+    min-height: auto;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .site-header .brand {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex: 0 0 auto;
   }
 
-  .brand img {
-    width: 235px;
+  .site-header .brand img {
+    width: 100% !important;
+    max-width: 390px !important;
+    height: auto !important;
+    object-fit: contain;
+    mix-blend-mode: normal;
   }
 
   nav {
     width: 100%;
     justify-content: center;
-    gap: 11px 16px;
+    gap: 10px 18px;
+  }
+
+  nav a {
+    font-size: .78rem;
+    letter-spacing: .10em;
   }
 
   .grid-2, .grid-3, .services, .brand-strip-inner {
     grid-template-columns: 1fr;
   }
 
-  .brand-strip img { width: 220px; }
-  .footer-inner { align-items: flex-start; flex-direction: column; }
-  .section { padding: 66px 0; }
-  .hero { min-height: 72vh; }
+  .brand-strip img {
+    width: 220px;
+  }
+
+  .footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .section {
+    padding: 66px 0;
+  }
+
+  .hero {
+    min-height: 72vh;
+  }
 }
