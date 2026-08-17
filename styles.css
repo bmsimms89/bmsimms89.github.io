@@ -326,12 +326,9 @@ nav a:hover, nav a[aria-current="page"] { color: var(--bronze); }
 }
 
 
-/* Improve PRIMARY SERVICES readability over photographic service cards */
-main .eyebrow {
+
+/* Shadow only the two homepage labels over feature images */
+.feature .eyebrow {
   color: #e1bc88;
   text-shadow: 0 1px 3px rgba(0, 0, 0, .72);
-}
-.hero .eyebrow {
-  color: #d2ad7d;
-  text-shadow: none;
 }
