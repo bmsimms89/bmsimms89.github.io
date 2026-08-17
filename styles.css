@@ -324,3 +324,14 @@ nav a:hover, nav a[aria-current="page"] { color: var(--bronze); }
     min-height: 72vh;
   }
 }
+
+
+/* Improve PRIMARY SERVICES readability over photographic service cards */
+main .eyebrow {
+  color: #e1bc88;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .72);
+}
+.hero .eyebrow {
+  color: #d2ad7d;
+  text-shadow: none;
+}
